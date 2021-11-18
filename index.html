@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
+    <link
+        rel="stylesheet"
+        href="https://bootswatch.com/5/lux/bootstrap.min.css"
+       />
+    
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href"#">Contact Form</a>
+            </div>
+        </div>
+    </nav>
+    
 </head>
 <body>
      <h1 style="color: green;"> 
@@ -18,19 +31,23 @@
           </p>
 
 
-
     <form action="https://formsubmit.co/contact@kendalldoescoding.gq" method="POST">
 
-        <input type="email" name="email" placeholder="Email Address" required">
-        <input type="hidden" name="_subject" value="New submission! You better check it quickly!!!">
-        <input type="hidden" name="_webhook" value="https://webhook.site/60cef1de-300c-44de-8a98-3ea09adf458b">
-        <input type="hidden" name="_next" value="https://contact1.thankyou.kendalldoescoding.gq">
-        <input type="text" name="name"  placeholder="Write your name here" required>
-        <input type="text" name="messege"  placeholder="Write your messege here" required>
-        <input type="text" name="phone"  placeholder="Phone Number">  
-        <form action="https://formsubmit.co/#SUB2MRBEAST" method="POST" />
-        <input type="hidden" name="_autoresponse" value="Hi! Thanks for contatcting us! We will get back to you soon. Have a great day! - Kendall">
-        <button type="submit">Send</button>
+        <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input name="name" type="text" class="form-control" required />
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input name="email" type="email" class="form-control" required />
+            <div id="emailHelp" class="form-text">
+                Don't worry, we won't share your private information with anyone other companies.
+            </div>
+        </div>
+        
+        
+        
    </form>
 
         
